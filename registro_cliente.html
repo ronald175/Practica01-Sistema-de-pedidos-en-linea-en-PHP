@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Registro Cliente</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet">
+</head>
+<body>
+
+<header class="item header margin-top-0">
+    <div class="wrapper">
+	<nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle" type="button">
+			<i class="fa fa-bars"></i>
+			<span class="sr-only">Toggle navigation</span>
+			</button>
+			<a href="registro_cliente.html" class="navbar-brand brand">Registro Usuario</a>
+		</div>
+		<div id="navbar-collapse-02" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="propClone"><a href="index.html">Principal</a></li>
+				<li class="propClone"><a href="shop.html">Fast Foot Restaurant</a></li>
+				<li class="propClone"><a href="shop1.html">Chick Restaurant</a></li>
+				<li class="propClone"><a href="shop2.html">Restaurant Don Maño</a></li>
+				<li class="propClone"><a href="registro_cliente.html">Registrarse</a></li>
+				<li class="propClone"><a href="login.html">Log In</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+<div class="container">
+ <form id="formulario01" method="POST" action="../controladores/crear_usuario.php">
+ <label for="cedula">Cedula (*)</label>
+ <input type="text" id="cedula" name="cedula" value="" placeholder="Ingrese el número de cedula ..."
+required/>
+ <br>
+ <label for="nombres">Nombres (*)</label>
+ <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus dos nombres
+..." required/>
+ <br>
+ <label for="apellidos">Apelidos (*)</label>
+ <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos
+..." required/>
+ <br>
+ <label for="direccion">Dirección (*)</label>
+ <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese su dirección ..."
+required/>
+ <br>
+ <label for="telefono">Teléfono (*)</label>
+ <input type="text" id="telefono" name="telefono" value="" placeholder="Ingrese su número telefónico
+..." required/>
+ <label for="correo">Correo electrónico (*)</label>
+ <input type="email" id="correo" name="correo" value="" placeholder="Ingrese su correo electrónico
+..." required/>
+ <br>
+ <label for="correo">Contraseña (*)</label>
+ <input type="password" id="contrasenia" name="contrasenia" value="" placeholder="Ingrese su
+contraseña ..." required/>
+ <br>
+ <input type="submit" id="crear" name="crear" value="Aceptar" />
+ <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+ </form> 
+</body>
+</html>
